@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Just a P.hD. student."
+title: "Xiaodong Cun | Homepage"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
