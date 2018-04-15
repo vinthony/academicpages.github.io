@@ -83,7 +83,7 @@ author:
   bio              : "Yet another Computer Vision Ph.D. student."
   location         : "Macau"
   employer         : "University of Macau"
-  googlescholar    : "http://yourfullgooglescholarurl.com"
+  googlescholar    : 
   email            : "vinthony@gmail.com"
   uri              : "vinthony.github.io"
   bitbucket        :
@@ -92,7 +92,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "http://github.com/vinthony"
+  github           : "vinthony"
   google_plus      :
   keybase          :
   instagram        : "vinthony"
@@ -104,9 +104,9 @@ author:
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            : "vinthony0329"
   tumblr           :
-  twitter          : "https://twitter.com/shadocun"
+  twitter          : "shadocun"
   vine             : 
-  weibo            : "https://weibo.com/vinthony"
+  weibo            : "vinthony"
   xing             :
   youtube          :
   wikipedia        :
