@@ -13,9 +13,9 @@ redirect_from:
 
 Education
 ======
-* B.S. in Computer Science, Xidian University, 2011-2015
-* M.S. in Computer Science, University of Macau, 2015-2018
-* Ph.D in Computer Science, University of Macau, from 2018 Fall 
+* B.S. in Computer Science, <i>Xidian University</i>, 2011-2015
+* M.S. in Computer Science, <i>University of Macau</i>, 2015-2018
+* Ph.D in Computer Science, <i>University of Macau</i>, from 2018 Fall 
 
 Work Experience
 ======
