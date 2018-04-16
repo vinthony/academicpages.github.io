@@ -38,12 +38,14 @@
     {% endif %} -->
     {% if post.venue%}
       {% if post.teaser%}
-          <img src="{{post.teaser}}" style="display: inline-block;width: 150px;height:150px;margin: 0 0 1.3em">
+          <img src="{{post.teaser}}" style="display: inline-block;width: 125px;height:125px;margin: 0 0 1.3em;vertical-align:top;">
       {% else %}
-          <img src="http://via.placeholder.com/150x150" style="display: inline-block;width: 150px;margin: 0 0 1.3em">
+          <img src="http://via.placeholder.com/125x125" style="display: inline-block;width: 125px;margin: 0 0 1.3em;vertical-align:top;">
       {% endif %}
-      <p style="display: inline-block;width: 78%" class="archive__item-excerpt" itemprop="description">{{ post.title }}
-      <br> 
+      <p style="display: inline-block;width: 82%" class="archive__item-excerpt" itemprop="description"><b><i>{{ post.title }}</i></b>
+      {% if post.authors%}
+      <br>{{post.authors}}<br>
+      {% endif %} 
       {% if post.paperurl%}
       <a href="{{ post.paperurl }}" rel="paperurl">[PDF]</a> 
       {% endif %} 
