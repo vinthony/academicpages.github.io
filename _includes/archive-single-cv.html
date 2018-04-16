@@ -15,7 +15,7 @@
 <div class="{{ include.type | default: "list" }}__item">
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
     <li style="list-style: none">
-    {% if include.type == "grid" and teaser %}
+    <!-- {% if include.type == "grid" and teaser %}
       <div class="archive__item-teaser">
         <img src=
           {% if teaser contains "://" %}
@@ -25,7 +25,7 @@
           {% endif %}
           alt="">
       </div>
-    {% endif %}
+    {% endif %} -->
    <!--  <h3 class="archive__item-title" itemprop="headline">
       {% if post.link %}
         <a href="{{ post.link }}">{{ title }}</a> <a href="{{ base_path }}{{ post.url }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
@@ -36,7 +36,13 @@
     <!-- {% if post.read_time %}
       <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
     {% endif %} -->
-    {% if post.venue%}<p class="archive__item-excerpt" itemprop="description">{{ post.citation }} {% if post.paperurl%}<a href="{{ post.paperurl }}" rel="paperurl">[PDF]</a> {% endif %} </p> {% endif %}
+    {% if post.venue%}
+    {% if post.teaser%}
+        <img src="{{post.teaser}}" style="display: inline-block;width: 20%;margin: 0 0 1.3em">
+    {% else %}
+        <img src="http://via.placeholder.com/350x150" style="display: inline-block;width: 20%;margin: 0 0 1.3em">
+    {% endif %}
+    <p style="display: inline-block;width: 78%" class="archive__item-excerpt" itemprop="description">{{ post.citation }} {% if post.paperurl%}<a href="{{ post.paperurl }}" rel="paperurl">[PDF]</a> {% endif %} </p> {% endif %}
 
     </li>
  </article>
