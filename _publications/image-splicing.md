@@ -6,7 +6,7 @@ excerpt: 'TODO.'
 date: 2018-03-14
 venue: 'ArXiv'
 paperurl: 'https://todo.com/'
-citation: 'Xiaodong Cun\*, Feng Xu\*,  Chi-Man Pun, Hao Gao(2017). &quot;Image Splicing Localization via Semi-Global Network and Fully Connected Conditional Random Fields&quot; <i>, ArXiv</i>.'
+citation: 'Xiaodong Cun\*, Chi-Man Pun (2018). &quot;Image Splicing Localization via Semi-Global Network and Fully Connected Conditional Random Fields&quot; <i>, ArXiv</i>.'
 ---
 
 <!-- This paper is about the number 3. The number 4 is left for future work. -->
