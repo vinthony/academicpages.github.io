@@ -37,12 +37,18 @@
       <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
     {% endif %} -->
     {% if post.venue%}
-    {% if post.teaser%}
-        <img src="{{post.teaser}}" style="display: inline-block;width: 20%;margin: 0 0 1.3em">
-    {% else %}
-        <img src="http://via.placeholder.com/350x150" style="display: inline-block;width: 20%;margin: 0 0 1.3em">
+      {% if post.teaser%}
+          <img src="{{post.teaser}}" style="display: inline-block;width: 150px;height:150px;margin: 0 0 1.3em">
+      {% else %}
+          <img src="http://via.placeholder.com/150x150" style="display: inline-block;width: 150px;margin: 0 0 1.3em">
+      {% endif %}
+      <p style="display: inline-block;width: 78%" class="archive__item-excerpt" itemprop="description">{{ post.title }}
+      <br> 
+      {% if post.paperurl%}
+      <a href="{{ post.paperurl }}" rel="paperurl">[PDF]</a> 
+      {% endif %} 
+      </p> 
     {% endif %}
-    <p style="display: inline-block;width: 78%" class="archive__item-excerpt" itemprop="description">{{ post.citation }} {% if post.paperurl%}<a href="{{ post.paperurl }}" rel="paperurl">[PDF]</a> {% endif %} </p> {% endif %}
 
     </li>
  </article>
