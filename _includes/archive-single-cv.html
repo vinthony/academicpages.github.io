@@ -44,10 +44,18 @@
       {% endif %}
       <p style="display: inline-block;width: 82%;padding-left: 5px;" class="archive__item-excerpt" itemprop="description"><b><i>{{ post.title }}</i></b>
       {% if post.authors%}
-      <br>{{post.authors}}<br>
+      <br>{{post.authors}}
       {% endif %} 
+
+      {% if post.publication %}
+      <br><b>In</b> <i>{{post.publication}}</i>
+      {% endif %} 
+      <br>
       {% if post.paperurl%}
       <a href="{{ post.paperurl }}" rel="paperurl">[PDF]</a> 
+      {% endif %} 
+      {% if post.arxiv%}
+      <a href="{{ post.arxiv }}" rel="paperurl">[ArXiv]</a> 
       {% endif %} 
       </p> 
     {% endif %}

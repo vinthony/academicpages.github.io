@@ -7,7 +7,7 @@ date: 2018-03-14
 venue: 'ArXiv'
 teaser: https://media.giphy.com/media/7SWA6OM09tNX6IgZdv/giphy.gif
 authors: Xiaodong Cun, Chi-Man Pun
-paperurl: 'https://todo.com/'
+publication: ECCV 2018 (under review)
 citation: 'Xiaodong Cun, Chi-Man Pun. &quot;Image Splicing Localization via Semi-Global Network and Fully Connected Conditional Random Fields&quot; <i>, (submitted to ECCV2018)</i>.'
 ---
 
