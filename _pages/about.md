@@ -10,7 +10,14 @@ redirect_from:
 
 {% include base_path %}
 
-Education
+<style type="text/css">
+	h1,h2,h3,h4,h5,h6{
+		font-family: 'Berkshire Swash', serif;
+	}
+
+</style>
+
+👾 Education
 =======
 * B.S. in Computer Science, <i>Xidian University</i>, 2011-2015
 * M.S. in Computer Science, <i>University of Macau</i>, 2015-2018
@@ -22,14 +29,14 @@ Education
   * Alibaba Group
   * Duties included: Taobao Moive -->
 
-Publications
+👾 Publications
 =======
   <ul style='padding-left:20px'>{% for post in site.publications %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
 
-Toy Projects
+👾 Toy Projects
 =======
   <ul style='padding-left:20px'>{% for post in site.teaching %}
     {% include archive-single-cv-projects.html %}
