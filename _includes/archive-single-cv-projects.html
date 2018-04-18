@@ -1,0 +1,52 @@
+{% include base_path %}
+
+{% if post.header.teaser %}
+  {% capture teaser %}{{ post.header.teaser }}{% endcapture %}
+{% else %}
+  {% assign teaser = site.teaser %}
+{% endif %}
+
+{% if post.id %}
+  {% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
+{% else %}
+  {% assign title = post.title %}
+{% endif %}
+
+<div class="{{ include.type | default: "list" }}__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    <li style="list-style: none">
+  
+      {% if post.teaser%}
+          <img src="{{post.teaser}}" style="display: inline-block;width: 125px;height:125px;margin: 0 0 1.3em;vertical-align:top;">
+      {% else %}
+          <img src="http://via.placeholder.com/125x125" style="display: inline-block;width: 125px;margin: 0 0 1.3em;vertical-align:top;">
+      {% endif %}
+      <p style="display: inline-block;width: 82%;padding-left: 5px;" class="archive__item-excerpt" itemprop="description"><b><i>{{ post.title }}</i></b>
+      
+      {% if post.discription %}
+      <br>{{post.discription}} 
+      {% endif %}
+      
+      {% if post.authors%}
+      <br>{{post.authors}}
+      {% endif %} 
+
+
+      {% if post.publication %}
+      <br><b>In</b> <i>{{post.publication}}</i>
+      {% endif %} 
+      <br>
+      {% if post.paperurl%}
+      <a href="{{ post.paperurl }}" rel="paperurl">[PDF]</a> 
+      {% endif %} 
+      {% if post.arxiv%}
+      <a href="{{ post.arxiv }}" rel="paperurl">[ArXiv]</a> 
+      {% endif %} 
+      {% if post.link%}
+      <a href="{{ post.link }}" rel="paperurl">[Github]</a> 
+      {% endif %} 
+      </p> 
+
+    </li>
+ </article>
+</div>

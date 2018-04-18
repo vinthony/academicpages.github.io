@@ -28,3 +28,9 @@ Publications
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
+
+Toy Projects
+=======
+  <ul style='padding-left:20px'>{% for post in site.teaching %}
+    {% include archive-single-cv-projects.html %}
+  {% endfor %}</ul>  

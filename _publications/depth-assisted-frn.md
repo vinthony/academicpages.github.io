@@ -8,7 +8,7 @@ venue: 'ArXiv'
 teaser: https://i.imgflip.com/1zqx5f.gif
 arxiv: 'https://arxiv.org/abs/1711.06620'
 publication: arxiv
-authors: Xiaodong Cun, Feng Xu, Chi-Man Pun, Hao Gao
+authors: Xiaodong Cun, <a href="http://feng-xu.com/">Feng Xu</a>, <a href="http://www.cis.umac.mo/~cmpun/">Chi-Man Pun</a>, Hao Gao
 citation: 'Xiaodong Cun, Feng Xu, Chi-Man Pun, Hao Gao(2017). &quot;Depth Assisted Full Resolution Network for Single Image based View Synthesis&quot; <i>, ArXiv</i>.'
 ---
 

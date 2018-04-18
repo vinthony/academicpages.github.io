@@ -5,7 +5,7 @@ permalink: /publication/second-order-entropy
 excerpt: 'TODO.'
 date: 2016-11-01
 venue: 'Signal Processing: Image Communication'
-authors: Xiaodong Cun, Chi-Man Pun, Hao Gao
+authors: Xiaodong Cun,  <a href="http://www.cis.umac.mo/~cmpun/">Chi-Man Pun</a>, Hao Gao
 publication: 'Signal Processing: Image Communication'
 citation: 'Xiaodong, Cun. Chi-Man Pun, Hao Gao(2018). &quot;Second Order Entropy Image for Multi-modal Image Registration&quot; <i>, Signal Processing: Image Communication</i>.'
 ---
