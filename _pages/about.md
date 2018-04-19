@@ -14,14 +14,20 @@ redirect_from:
 	h1,h2,h3,h4,h5,h6{
 		font-family: 'Berkshire Swash', serif;
 	}
+	body{
+		font-family: 'Stylish', sans-serif;
+	}
 
 </style>
 
 👾 Education
 =======
-* B.S. in Computer Science, <i>Xidian University</i>, 2011-2015
-* M.S. in Computer Science, <i>University of Macau</i>, 2015-2018
-* Ph.D in Computer Science, <i>University of Macau</i>, from 2018 Fall 
+<ul style="list-style: none;">
+<li>🎓 B.S. in Computer Science, <i>Xidian University</i>, 2011-2015</li>
+<li>🎓 M.S. in Computer Science, <i>University of Macau</i>, 2015-2018</li>
+<li>🎓 Ph.D in Computer Science, <i>University of Macau</i>, from 2018 Fall </li>
+</ul>
+
 
 <!-- Work Experience
 =======

@@ -18,9 +18,9 @@ sass:
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Xiaodong Cun"
+title                    : "👾 Xiaodong Cun"
 title_separator          : "-"
-name                     : &name "Xiaodong Cun"
+name                     : &name "👾 Xiaodong Cun"
 description              : &description "Ph.D. student in University of Macau"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 # repository               : "vinthony/academicpages.github.io/"
