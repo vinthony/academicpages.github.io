@@ -1,2 +1,70 @@
 {% include base_path %}
 <div id="health-container" style="height: 40%;"></div>
+
+<script type="text/javascript" src="https://www.echartsjs.com/gallery/vendors/echarts/echarts.min.js"></script>
+<script type="text/javascript" src="https://www.echartsjs.com/gallery/vendors/echarts-gl/echarts-gl.min.js"></script>
+<script type="text/javascript" src="https://www.echartsjs.com/gallery/vendors/echarts-stat/ecStat.min.js"></script>
+<script type="text/javascript" src="https://www.echartsjs.com/gallery/vendors/echarts/extension/dataTool.min.js"></script>
+<script type="text/javascript" src="https://www.echartsjs.com/gallery/vendors/echarts/map/js/china.js"></script>
+<script type="text/javascript" src="https://www.echartsjs.com/gallery/vendors/echarts/map/js/world.js"></script>
+<script type="text/javascript" src="https://www.echartsjs.com/gallery/vendors/echarts/extension/bmap.min.js"></script>
+<script type="text/javascript" src="https://www.echartsjs.com/gallery/vendors/simplex.js"></script>
+<script type="text/javascript">
+var dom = document.getElementById("health-container");
+var myChart = echarts.init(dom);
+var app = {};
+option = null;
+
+data = [["2018-04-05",147.5],
+        ["2018-04-06",148.4],
+        ["2018-04-07",145.4],
+        ["2018-04-08",145.8],
+        ["2018-04-09",147.5],
+        ["2018-04-10",144.5],
+        ["2018-04-11",143.2],
+        ["2018-04-12",142.5],
+        ["2018-04-13",144.2],
+        ["2018-04-14",143.9],
+        ["2018-04-15",146.0],
+        ["2018-04-16",147.5],
+        ["2018-04-17",146.6],
+        ["2018-04-18",147.7],
+        ["2018-04-19",147.3]];
+
+var dateList = data.map(function (item) {
+    return item[0];
+});
+var valueList = data.map(function (item) {
+    return item[1]/2;
+});
+
+var valueList2 = data.map(function (item) {
+    return item[1]/2 + 'kg';
+});
+
+option = {
+    xAxis:{
+        data: dateList
+    },
+    yAxis: {
+        splitLine: {show: true},
+        min: function(value) {
+		    return value.min - 1;
+		},
+        max:function(value) {
+		    return value.max + 1;
+		},
+        type: 'value',
+        axisLabel:{formatter: '{value} kg'}
+    },
+    series: [{
+        type: 'line',
+        smooth: true,
+        label:'kg',
+        data: valueList
+    }]
+};;
+if (option && typeof option === "object") {
+    myChart.setOption(option, true);
+}
+</script>
