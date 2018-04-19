@@ -47,3 +47,11 @@ redirect_from:
   <ul style='padding-left:20px'>{% for post in site.teaching %}
     {% include archive-single-cv-projects.html %}
   {% endfor %}</ul>  
+
+👾 Weight
+=======
+{% include show_health.html %}
+
+👾 GO To GYM ? 
+=======
+{% include show_gym.html %}
