@@ -51,10 +51,10 @@ option = {
     yAxis: {
         splitLine: {show: true},
         min: function(value) {
-		    return value.min - 1;
+		    return math.round(value.min - 1);
 		},
         max:function(value) {
-		    return value.max + 1;
+		    return math.round(value.max + 1);
 		},
         type: 'value',
         axisLabel:{formatter: '{value} kg'}
