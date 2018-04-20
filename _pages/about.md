@@ -52,6 +52,6 @@ redirect_from:
 =======
 {% include show_health.html %}
 
-👾 GO To GYM ? 
+👾 Go to gym?
 =======
 {% include show_gym.html %}
