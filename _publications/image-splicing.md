@@ -5,6 +5,7 @@ permalink: /publication/semi-global-network
 excerpt: 'TODO.'
 date: 2018-03-14
 venue: 'ArXiv'
+paperurl: https://drive.google.com/file/d/1I_1cdol1e9OokhwEmzKHRNkQJyfV4ZT3/view
 teaser: https://media.giphy.com/media/7SWA6OM09tNX6IgZdv/giphy.gif
 authors: Xiaodong Cun,  <a href="http://www.cis.umac.mo/~cmpun/">Chi-Man Pun</a>
 publication: ECCV 2018 Workshop (Oral)
