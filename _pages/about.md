@@ -18,7 +18,12 @@ redirect_from:
 		font-family: 'Stylish', sans-serif;
 	}
 
+i{
+  font-weight:bold
+}
 </style>
+
+
 
 👾 Education
 =======
@@ -28,6 +33,13 @@ redirect_from:
 <li>🎓 Ph.D in Computer Science, <i>University of Macau</i>, from 2018 Fall </li>
 </ul>
 
+👾 Activity
+=======
+<ul style="list-style: none;">
+<li>🚀 FrondEnd Engineer, <i>Alibaba Group</i>, 2014 Summer, Hangzhou, China</li>
+<li>🚀 Algorithm Engineer, <i>HikVision Research Institute</i>, 2018 Summer, HangZhou, China</li>
+<li>🚀 Asian University Machine Learning Camp, <i>Jeju National University</i>, 2018 Summer, Jeju, Korea </li>
+</ul>
 
 <!-- Work Experience
 =======
@@ -40,14 +52,6 @@ redirect_from:
   <ul style='padding-left:20px'>{% for post in site.publications %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
-  
-👾 Activity
-=======
-<ul style="list-style: none;">
-<li>🚀 FrondEnd Engineer, <i>Alibaba Group</i>, 2014 Summer, Hangzhou</li>
-<li>🚀 Algorithm Engineer, <i>HikVision Research Institute</i>, 2018 Summer, HangZhou</li>
-<li>🚀 Asian University Machine Learning Camp, Jeju National University, 2018 Summer, Jeju, Korea </li>
-</ul>
 
 <div style='padding-left:20px'>
   <div class='activity-item'>
