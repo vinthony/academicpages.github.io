@@ -41,6 +41,25 @@ redirect_from:
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
+👾 Activity
+=======
+<ul style="list-style: none;">
+<li>🚀 FrondEnd Engineer, <i>Alibaba Group</i>, 2014 Summer, Hangzhou</li>
+<li>🚀 Algorithm Engineer, <i>HikVision Research Institute</i>, 2018 Summer, HangZhou</li>
+<li>🚀 Asian University Machine Learning Camp, Jeju National University, 2018 Summer, Jeju, Korea </li>
+</ul>
+
+<div style='padding-left:20px'>
+  <div class='activity-item'>
+    <div></div>
+  </div>
+  <div class='activity-item'>
+    <div></div>
+  </div>
+  <div class='activity-item'>
+    <div></div>
+  </div>
+</div>
 
 👾 Toy Projects
 =======

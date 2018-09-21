@@ -5,7 +5,6 @@ permalink: /publication/noise-removel-gan
 excerpt: 'TODO.'
 date: 2018-08-19
 venue: 'ArXiv'
-teaser: https://media.giphy.com/media/7SWA6OM09tNX6IgZdv/giphy.gif
 authors: Mok GSP, Zhang Q, <b>Cun XD</b>, Zhang D, Hendrik PH and King MA
 publication:  2018 IEEE Nuclear Science Symposium and Medical Imaging Conference
 ---
