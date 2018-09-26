@@ -36,8 +36,8 @@ i{
 👾 Activity
 =======
 <ul style="list-style: none;">
-<li>🚀 FrondEnd Engineer, <i>Alibaba Group</i>, 2014 Summer, Hangzhou, China</li>
-<li>🚀 Algorithm Engineer, <i>HikVision Research Institute</i>, 2018 Summer, HangZhou, China</li>
+<li>🚀 Intern FrondEnd Engineer, <i>Alibaba Group</i>, 2014 Summer, Hangzhou, China</li>
+<li>🚀 Intern Algorithm Engineer, <i>HIKVision Research Institute</i>, 2018 Summer, HangZhou, China</li>
 <li>🚀 Asian University Machine Learning Camp, <i>Jeju National University</i>, 2018 Summer, Jeju, Korea </li>
 </ul>
 
@@ -78,3 +78,7 @@ i{
 👾 Go to gym?
 =======
 {% include show_gym.html %}
+
+👾 Achievements
+=======
+{% include show_achievement.html %}
