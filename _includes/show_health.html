@@ -1,5 +1,5 @@
 {% include base_path %}
-<div id="health-container" style="height: 40%;"></div>
+<div id="health-container" style="height: 30%;"></div>
 
 
 <script type="text/javascript">
@@ -51,6 +51,9 @@ var valueList2 = data.map(function (item) {
 });
 
 option = {
+    title:{
+        show:false
+    },
     xAxis:{
         data: dateList
     },
@@ -70,7 +73,8 @@ option = {
         smooth: true,
         label:'kg',
         data: valueList
-    }]
+    }],
+    top:30
 };;
 if (option && typeof option === "object") {
     myChart.setOption(option, true);
