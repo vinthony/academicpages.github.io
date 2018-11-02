@@ -1,13 +1,46 @@
-<div id="gym-container" style='overflow: visible;'></div>
+<div id="gym-container" style='overflow: visible;width: 100%;height: 15%'></div>
 <script type="text/javascript">
-  jQuery.get('https://cors-anywhere.herokuapp.com/http://s1.natapp.cc:37373/test.csv',function(data,status){
+  var dom = document.getElementById("gym-container");
+var myChart = echarts.init(dom);
+var app = {};
+option = null;
+
+jQuery.get('https://cors-anywhere.herokuapp.com/http://s1.natapp.cc:37373/test.csv',function(data,status){
     chartData = new Array();
+
     lines = data.split('\n');
     for (var i = lines.length - 1; i >= 0; i--) {
+      if(lines[i] == "") continue;
       dt = lines[i].split(',');
-      chartData.push({date:new Date(dt[1]),count:Number(dt[0])});
+      chartData.push([echarts.format.formatTime('yyyy-MM-dd', dt[1]),Number(dt[0])]);
     };
-    var chart1 = calendarHeatmap().data(chartData).selector('#gym-container').colorRange(['#D8E6E7', '#218380']).tooltipEnabled(true).tooltipUnit('Go To GYM').onClick(function (data) {console.log('onClick callback. Data:', data);}); chart1();
-  });
-</script>
+    console.log(chartData)
+    option = {
+      tooltip : {},
+      calendar: {
+          top: 30,
+          left: 30,
+          right: 30,
+          range: new Date().getFullYear(),
+          splitLine: false,
+          cellSize: ['auto', 13],
+          color: '#ddd',
+          itemStyle: {
+              normal: {borderWidth: 2,
+                borderColor: '#fff',
+                color: 'rgb(235,237,240)' }
+          },
+          yearLabel: {show: false}
+      },
+      series: {
+          type: 'heatmap',
+          coordinateSystem: 'calendar',
+          data: chartData
+      }
+    };
+    if (option && typeof option === "object") {
+        myChart.setOption(option, true);
+    }
+});
 
+</script>
