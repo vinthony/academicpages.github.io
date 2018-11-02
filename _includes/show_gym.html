@@ -8,22 +8,20 @@
   console.log('here');
   jQuery.get('https://cors-anywhere.herokuapp.com/http://s1.natapp.cc:37373/test.csv',function(datax,status){
     console.log(datax);});
+  chartData = new Array();
+    lines = data.split('\n');
+    for (var i = lines.length - 1; i >= 0; i--) {
+      dt = lines[i].split(',')
+      chartData.push({date:new Date(dt[1]),count:Number(dt[0])});
+    };
+    var chart1 = calendarHeatmap()
+                  .data(chartData)
+                  .selector('#gym-container')
+                  .colorRange(['#D8E6E7', '#218380'])
+                  .tooltipEnabled(true)
+                  .tooltipUnit('Go To GYM')
+                  .onClick(function (data) {
+                    console.log('onClick callback. Data:', data);
+                  });chart1();  // render the chart
 </script>
 
-<script type="text/javascript">
-    // chartData = new Array();
-    // lines = data.split('\n');
-    // for (var i = lines.length - 1; i >= 0; i--) {
-    //   dt = lines[i].split(',')
-    //   chartData.push({date:new Date(dt[1]),count:Number(dt[0])});
-    // };
-    // var chart1 = calendarHeatmap()
-    //               .data(chartData)
-    //               .selector('#gym-container')
-    //               .colorRange(['#D8E6E7', '#218380'])
-    //               .tooltipEnabled(true)
-    //               .tooltipUnit('Go To GYM')
-    //               .onClick(function (data) {
-    //                 console.log('onClick callback. Data:', data);
-    //               });chart1();  // render the chart
-</script>
