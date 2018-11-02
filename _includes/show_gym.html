@@ -7,14 +7,12 @@ option = null;
 
 jQuery.get('https://cors-anywhere.herokuapp.com/http://s1.natapp.cc:37373/test.csv',function(data,status){
     chartData = new Array();
-
     lines = data.split('\n');
     for (var i = lines.length - 1; i >= 0; i--) {
       if(lines[i] == "") continue;
       dt = lines[i].split(',');
       chartData.push([echarts.format.formatTime('yyyy-MM-dd', dt[1]),Number(dt[0])]);
     };
-    console.log(chartData)
     option = {
       tooltip : {},
       calendar: {
