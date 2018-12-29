@@ -8,7 +8,7 @@ option = null;
 
 jQuery.get('https://cors-anywhere.herokuapp.com/http://s1.natapp.cc:37373/test.csv',function(data,status){
     chartData = new Array();
-    var dataX = [0,'gym','running']
+    var dataX = [0,'gym','running'];
     lines = data.split('\n');
     for (var i = lines.length - 1; i >= 0; i--) {
       if(lines[i] == "") continue;
