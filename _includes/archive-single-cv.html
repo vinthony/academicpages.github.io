@@ -62,6 +62,9 @@
       {% if post.arxiv%}
       <a href="{{ post.arxiv }}" rel="paperurl">[ArXiv]</a> 
       {% endif %} 
+      {% if post.code%}
+      <a href="{{ post.code }}" rel="paperurl">[Github]</a> 
+      {% endif %} 
       </div> 
     {% endif %}
 
