@@ -9,8 +9,8 @@ jQuery.get('https://cors-anywhere.herokuapp.com/http://s1.natapp.cc:37373/fitnes
     chartData = new Array();
     lines = data.split(',');
     for (var i = lines.length - 1; i >= 0; i--) {
-        var dt = new Date()
-        dt.setDate(dt.getDate() - i)
+        var dt = new Date();
+        dt.setDate(dt.getDate() - i);
         if(Number(lines[i])>70)
             chartData.push([echarts.format.formatTime('yyyy-MM-dd', dt),Number(lines[i])]);
     };
@@ -55,7 +55,7 @@ jQuery.get('https://cors-anywhere.herokuapp.com/http://s1.natapp.cc:37373/fitnes
     };;
     if (option && typeof option === "object") {
         myChart.setOption(option, true);
-    }
+    };
     });
 
 </script>
