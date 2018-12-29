@@ -8,12 +8,14 @@ option = null;
 
 jQuery.get('https://cors-anywhere.herokuapp.com/http://s1.natapp.cc:37373/test.csv',function(data,status){
     chartData = new Array();
+    var dataX = [0,'gym','running']
     lines = data.split('\n');
     for (var i = lines.length - 1; i >= 0; i--) {
       if(lines[i] == "") continue;
       dt = lines[i].split(',');
-      chartData.push([echarts.format.formatTime('yyyy-MM-dd', dt[1]),Number(dt[0])]);
+      chartData.push([echarts.format.formatTime('yyyy-MM-dd', dt[1]),dataX[Number(dt[0])]]);
     };
+    
     current = new Date();
     option = {
       tooltip : {},
@@ -21,7 +23,7 @@ jQuery.get('https://cors-anywhere.herokuapp.com/http://s1.natapp.cc:37373/test.c
           top: 30,
           left: 30,
           right: 30,
-          range: [current.getFullYear()-1+'-'+(current.getUTCMonth())+'-'+current.getUTCDate(),current.getFullYear()+'-'+(current.getUTCMonth()+1)+'-'+current.getUTCDate()],
+          range: [current.getFullYear()+'-'+(current.getUTCMonth()-6)+'-'+current.getUTCDate(),current.getFullYear()+'-'+(current.getUTCMonth()+1)+'-'+current.getUTCDate()],
           splitLine: false,
           cellSize: ['auto', 13],
           color: '#ddd',
@@ -32,6 +34,19 @@ jQuery.get('https://cors-anywhere.herokuapp.com/http://s1.natapp.cc:37373/test.c
           },
           yearLabel: {show: false}
       },
+      visualMap: {
+        min: 0,
+        max: 2,
+        splitNumber:2,
+        categories: [ 'gym','running'],
+        type: 'piecewise',
+        orient: 'horizontal',
+        left: 'center',
+        top: 65,
+        textStyle: {
+            color: '#000'
+        }
+    },
       series: {
           type: 'heatmap',
           coordinateSystem: 'calendar',
