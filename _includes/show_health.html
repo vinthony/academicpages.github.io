@@ -46,6 +46,11 @@ jQuery.get('https://cors-anywhere.herokuapp.com/http://s1.natapp.cc:37373/fitnes
             type: 'value',
             axisLabel:{formatter: '{value} kg'}
         },
+        tooltip: {
+          trigger: 'axis',
+            axisPointer: {
+              animation: false
+        },
         series: [{
             type: 'line',
             smooth: true,
