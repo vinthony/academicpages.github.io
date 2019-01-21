@@ -1,3 +1,55 @@
+{% include base_path %}
+
+<!-- start custom head snippets -->
+
+<link rel="apple-touch-icon" sizes="57x57" href="{{ base_path }}/images/apple-touch-icon-57x57.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="60x60" href="{{ base_path }}/images/apple-touch-icon-60x60.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="72x72" href="{{ base_path }}/images/apple-touch-icon-72x72.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="76x76" href="{{ base_path }}/images/apple-touch-icon-76x76.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="114x114" href="{{ base_path }}/images/apple-touch-icon-114x114.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="120x120" href="{{ base_path }}/images/apple-touch-icon-120x120.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="144x144" href="{{ base_path }}/images/apple-touch-icon-144x144.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="152x152" href="{{ base_path }}/images/apple-touch-icon-152x152.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="180x180" href="{{ base_path }}/images/apple-touch-icon-180x180.png?v=M44lzPylqQ">
+<link rel="icon" type="image/png" href="{{ base_path }}/images/favicon-32x32.png?v=M44lzPylqQ" sizes="32x32">
+<link rel="icon" type="image/png" href="{{ base_path }}/images/android-chrome-192x192.png?v=M44lzPylqQ" sizes="192x192">
+<link rel="icon" type="image/png" href="{{ base_path }}/images/favicon-96x96.png?v=M44lzPylqQ" sizes="96x96">
+<link rel="icon" type="image/png" href="{{ base_path }}/images/favicon-16x16.png?v=M44lzPylqQ" sizes="16x16">
+<link rel="manifest" href="{{ base_path }}/images/manifest.json?v=M44lzPylqQ">
+<link rel="mask-icon" href="{{ base_path }}/images/safari-pinned-tab.svg?v=M44lzPylqQ" color="#000000">
+<link rel="shortcut icon" href="/images/favicon.ico?v=M44lzPylqQ">
+<meta name="msapplication-TileColor" content="#000000">
+<meta name="msapplication-TileImage" content="{{ base_path }}/images/mstile-144x144.png?v=M44lzPylqQ">
+<meta name="msapplication-config" content="{{ base_path }}/images/browserconfig.xml?v=M44lzPylqQ">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="{{ base_path }}/assets/css/academicons.css"/>
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+<script type="text/javascript" src="https://momentjs.com/downloads/moment.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.13.0/d3.min.js"></script>
+<link rel="stylesheet" type="text/css" href="{{ base_path }}/assets/css/calendar-heatmap.css">
+<script type="text/javascript" src="{{ base_path }}/assets/js/calendar-heatmap.js"></script>
+<script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js"></script>
+<script type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); </script>
+<script type="text/javascript" src="https://www.echartsjs.com/gallery/vendors/echarts/echarts.min.js"></script>
+<script type="text/javascript" src="https://www.echartsjs.com/gallery/vendors/echarts-gl/echarts-gl.min.js"></script>
+<script type="text/javascript" src="https://www.echartsjs.com/gallery/vendors/echarts-stat/ecStat.min.js"></script>
+<script type="text/javascript" src="https://www.echartsjs.com/gallery/vendors/echarts/extension/dataTool.min.js"></script>
+<script type="text/javascript" src="https://www.echartsjs.com/gallery/vendors/echarts/map/js/china.js"></script>
+<script type="text/javascript" src="https://www.echartsjs.com/gallery/vendors/echarts/map/js/world.js"></script>
+<script type="text/javascript" src="https://www.echartsjs.com/gallery/vendors/echarts/extension/bmap.min.js"></script>
+<script type="text/javascript" src="https://www.echartsjs.com/gallery/vendors/simplex.js"></script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+<!-- end custom head snippets -->
 
 <div id="gym-container" style='overflow: visible;width: 100%;height: 20%'></div>
 <script type="text/javascript">
@@ -6,16 +58,14 @@ var myChart = echarts.init(dom,"vintage");
 var app = {};
 option = null;
 
-jQuery.get('https://cors-anywhere.herokuapp.com/http://s1.natapp.cc:37373/test.csv',function(data,status){
+jQuery.get('https://cors-anywhere.herokuapp.com/http://s1.natapp.cc:37373/kaluli.csv',function(data,status){
     chartData = new Array();
-    var dataX = [0,'gym','running'];
-    lines = data.split('\n');
+    lines = data.split(',');
     for (var i = lines.length - 1; i >= 0; i--) {
-      if(lines[i] == "") continue;
-      dt = lines[i].split(',');
-      chartData.push([echarts.format.formatTime('yyyy-MM-dd', dt[1]),Number(dt[0]),dataX[Number(dt[0])]]);
+        var dt = new Date();
+        dt.setDate(dt.getDate() - i);
+        chartData.push([echarts.format.formatTime('yyyy-MM-dd', dt),Number(lines[i]).toFixed(2)]);
     };
-    
     current = new Date();
     option = {
       tooltip : {},
@@ -34,17 +84,19 @@ jQuery.get('https://cors-anywhere.herokuapp.com/http://s1.natapp.cc:37373/test.c
           },
           yearLabel: {show: false}
       },
-      visualMap: {
+       visualMap: {
         min: 0,
-        max: 2,
-        splitNumber:2,
-        categories: [ 'gym','running'],
+        max: 3000,
         type: 'piecewise',
         orient: 'horizontal',
         left: 'center',
-        top: 5,
+        top: 0,
+        splitNumber:6,
         textStyle: {
             color: '#000'
+        },
+        formatter:function(value1,value2){
+          return value1 + '~' +value2 + '(kcal)'
         }
     },
       series: {
