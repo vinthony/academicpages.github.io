@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Regional Attentive Skip-Connection for Image Harmonization</title>
+	 <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href='http://fonts.font.im/css?family=Stylish' rel='stylesheet' type='text/css'>
+    <style type="text/css">
+    	a{
+    		font-family: 'Stylish', sans-serif;
+    		display: inline-block;
+    		margin: 0 5px;
+    		font-size: 1.2em;
+    	}
+    	a:hover{
+    		text-decoration: none;
+            color: #77428D;
+
+    	}
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+	<br>
+	
+	<h1 style='font-family: serif;'align='center'>Regional Attentive Skip-Connection for Image Harmonization</h1>
+	<h4 style='font-family: serif;'align='center' align='center'><a href="https://vinthony.github.io/">Xiaodong Cun</a> and <a href="http://www.cis.umac.mo/~cmpun/">Chi-Man Pun</a></h4>
+	<p align='center'>University of Macau</p>
+
+	<p align='center'><a href="#">[Github]</a><a href="#">[ArXiv]</a><a href="#">[Demo]</a></p>
+
+	<h3>Abstract</h3>
+	<p style="text-align:justify">We address the problem of Image Harmonization: Given a spliced image and the mask of the spliced region, we try to harmonize the “style” of the pasted region with the background (non-spliced region). Previous approaches have been focusing on learning directly by the neural network. In this work, we start from an empirical observation: the differences can only be found in the spliced region between the spliced image and the harmonized result while they share the same semantic information and the appearance in the non-spliced region. Thus, in order to learn the masked region and the reversed masked region of the feature map individually, we propose a novel attention module named Regional Attentive Skip-Connection (RASC). Furthermore, we design a novel image harmonization method by replacing the original skip-connection in Unet with RASC module for the encoder-decoder structure ensures the consistency in high-level features. The experiments show that the proposed RASC module performs better than other state-of-the-art attention modules in our task. Moreover, we demonstrate the advantages of our model against other state-of-the-art image harmonization methods via criteria from multiple points of view. </p>
+
+</div>
+
+</body>
+</html>
+

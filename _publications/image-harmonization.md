@@ -5,9 +5,10 @@ permalink: /publication/attention-image-harmonization
 excerpt: 'TODO.'
 date: 2019-02-26
 venue: 'ArXiv'
-<!-- paperurl: https://drive.google.com/file/d/1I_1cdol1e9OokhwEmzKHRNkQJyfV4ZT3/view -->
+arxiv: https://github.com/vinthony/todo
 teaser: https://vinthony.github.io/academicpages.github.io/images/harmonization.gif
 code: https://github.com/vinthony/todo
+project: /projects/rasc.html
 authors: <b>Xiaodong Cun</b>,  <a href="http://www.cis.umac.mo/~cmpun/">Chi-Man Pun</a>
 <!-- publication: ECCV 2018 Workshop (Oral) -->
 ---
