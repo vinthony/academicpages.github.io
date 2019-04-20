@@ -17,41 +17,51 @@
   .post-teaser{
     box-shadow: 3px 0px 3px #ccc;
   }
+  a{
+    color:#000;
+  }
+  .links{
+    color: #77428D;
+  }
 </style>
 
 <div class="{{ include.type | default: "list" }}__item">
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
     <li style="list-style: none">
   
-      {% if post.teaser%}
+     <!--  {% if post.teaser%}
           <img class='post-teaser' src="{{post.teaser}}" style="display: inline-block;width: 125px;height:125px;margin: 0 0 1.3em;vertical-align:top;">
       {% else %}
           <img class='post-teaser'  src="http://via.placeholder.com/125x125" style="display: inline-block;width: 125px;margin: 0 0 1.3em;vertical-align:top;">
-      {% endif %}
-      <div style="display: inline-block;width: 82%;padding-left: 5px;" itemprop="description"><b><i>{{ post.title }}</i></b>
+      {% endif %} -->
+      <div style="display: inline-block;width: 82%;padding-left: 5px;padding-bottom: 5px; border-bottom: 1px solid #eee " itemprop="description">
+        <b style="font-size: 1.2em"><i >📜 {{ post.title }}</i></b>
       
-      {% if post.discription %}
+      <!-- {% if post.discription %}
       <br><div style="display: inline; color: #999">{{post.discription}}</div> 
-      {% endif %}
+      {% endif %} -->
 
       {% if post.authors%}
-      <br><div style="display: inline; color: #ccc">{{post.authors}}</div>
+      <br>
+      <div style="display: inline; ">  {{post.authors}}</div>
       {% endif %} 
-
 
       {% if post.publication %}
-      <br><b>In</b> <i>{{post.publication}}</i>
+      <br> 
+      <i style="color:#7B90D2"> {{post.publication}}</i>
       {% endif %} 
       <br>
+      <b>
       {% if post.paperurl%}
-      <a href="{{ post.paperurl }}" rel="paperurl">[PDF]</a> 
+      <a class='links' href="{{ post.paperurl }}" rel="paperurl">[PDF]</a> 
       {% endif %} 
       {% if post.arxiv%}
-      <a href="{{ post.arxiv }}" rel="paperurl">[ArXiv]</a> 
+      <a class='links' href="{{ post.arxiv }}" rel="paperurl">[ArXiv]</a> 
       {% endif %} 
       {% if post.link%}
-      <a href="{{ post.link }}" rel="paperurl">[Github]</a> 
+      <a class='links' href="{{ post.link }}" rel="paperurl">[Github]</a> 
       {% endif %} 
+    </b>
       </div> 
 
     </li>

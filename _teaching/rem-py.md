@@ -1,10 +1,10 @@
 ---
-title: "Rem.py"
+title: "Rem.py: A toy Nerual Network framework based on Numpy"
 collection: teaching
 permalink: /teaching/rem-py
 date: 2018-03-14
 authors: Xiaodong Cun
-discription: A toy Nerual Network framework based on Numpy
+discription: 
 teaser: http://github.com/vinthony/rem.py/raw/master/assets/default.png
 link: https://github.com/vinthony/rem.py
 ---
