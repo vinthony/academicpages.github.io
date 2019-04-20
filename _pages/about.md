@@ -47,7 +47,27 @@ i{
   * Alibaba Group
   * Duties included: Taobao Moive -->
 
-👾 Publications
+👾 Highlight Publications
+=======
+  <ul style='padding-left:20px'>{% for post in site.publications %}
+    {% include archive-single-cv.html %}
+  {% endfor %}</ul>
+
+<div style='padding-left:20px'>
+  <div class='activity-item'>
+    <div></div>
+  </div>
+  <div class='activity-item'>
+    <div></div>
+  </div>
+  <div class='activity-item'>
+    <div></div>
+  </div>
+</div>
+
+
+
+👾 Pervious Publications
 =======
   <ul style='padding-left:20px'>{% for post in site.publications %}
     {% include archive-single-cv.html %}
@@ -71,13 +91,13 @@ i{
     {% include archive-single-cv-projects.html %}
   {% endfor %}</ul>  
 
-👾 Weight
+<!-- 👾 Weight
 =======
 {% include show_health.html %}
 
 👾 Go to gym?
 =======
-{% include show_gym.html %}
+{% include show_gym.html %} -->
 
 👾 Achievements
 =======
