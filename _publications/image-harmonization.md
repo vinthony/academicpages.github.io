@@ -8,7 +8,7 @@ venue: 'ArXiv'
 arxiv: https://github.com/vinthony/todo
 teaser: https://vinthony.github.io/academicpages.github.io/images/harmonization.gif
 code: https://github.com/vinthony/todo
-project: /projects/rasc.html
+project: https://vinthony.github.io/academicpages.github.io/projects/rasc.html
 authors: <b>Xiaodong Cun</b>,  <a href="http://www.cis.umac.mo/~cmpun/">Chi-Man Pun</a>
 <!-- publication: ECCV 2018 Workshop (Oral) -->
 ---
