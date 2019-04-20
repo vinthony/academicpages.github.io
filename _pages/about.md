@@ -91,13 +91,6 @@ i{
     {% include archive-single-cv-projects.html %}
   {% endfor %}</ul>  
 
-<!-- 👾 Weight
-=======
-{% include show_health.html %}
-
-👾 Go to gym?
-=======
-{% include show_gym.html %} -->
 
 👾 Achievements
 =======
