@@ -6,7 +6,7 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-theme                    : minimal-mistakes-jekyll
+theme                    : jekyll-theme-minimal
 locale                   : "en-US"
 title                    : "👾 Xiaodong Cun"
 title_separator          : "-"
@@ -91,7 +91,7 @@ author:
   codepen          :
   dribbble         :
   flickr           :
-  facebook         : "https://www.facebook.com/vinthony.chris"
+  facebook         : "vinthony.chris"
   foursquare       :
   github           : "vinthony"
   google_plus      :
