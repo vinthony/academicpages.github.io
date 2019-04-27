@@ -45,6 +45,8 @@ i{
 }
 </style>
 
+👾 Bio
+=======
 
 
 👾 Education
