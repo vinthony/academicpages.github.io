@@ -45,10 +45,6 @@ i{
 }
 </style>
 
-👾 Bio
-=======
-
-
 👾 Education
 =======
 <ul style="list-style: none;">
