@@ -1,5 +1,5 @@
 ---
-title: "Attention-based Deep Image Harmonization"
+title: "Improving the Harmony of the Composite Image by Spatial-Separated Attention Module"
 collection: publications
 permalink: /publication/attention-image-harmonization
 excerpt: 'TODO.'
@@ -7,7 +7,7 @@ date: 2019-02-26
 venue: 'ArXiv'
 arxiv: https://github.com/vinthony/todo
 teaser: https://vinthony.github.io/academicpages.github.io/images/harmonization.gif
-code: https://github.com/vinthony/todo
+code: https://github.com/vinthony/s2am
 project: https://vinthony.github.io/academicpages.github.io/projects/rasc.html
 authors: <b>Xiaodong Cun</b>,  <a href="http://www.cis.umac.mo/~cmpun/">Chi-Man Pun</a>
 <!-- publication: ECCV 2018 Workshop (Oral) -->
