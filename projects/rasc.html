@@ -8,36 +8,79 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href='https://fonts.font.im/css?family=Stylish' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond|Marko+One|Stylish" rel="stylesheet">
     <style type="text/css">
+        body{
+            font-family: 'EB Garamond', sans-serif;
+            font-size: 1.1em;
+            background: #efefef;
+        }
+        .container{
+            background: #fff;
+        }
     	a{
     		font-family: 'Stylish', sans-serif;
     		display: inline-block;
     		margin: 0 5px;
-    		font-size: 1.2em;
     	}
     	a:hover{
     		text-decoration: none;
             color: #77428D;
 
     	}
-
+        h1,h2,h3,h4,h5,h6{
+            font-family: 'Marko One', serif;
+        }
     </style>
 </head>
 <body>
 
-<div class="container">
-	<br>
-	
-	<h1 style='font-family: serif;'align='center'>Regional Attentive Skip-Connection for Image Harmonization</h1>
-	<h4 style='font-family: serif;'align='center' align='center'><a href="https://vinthony.github.io/">Xiaodong Cun</a> and <a href="http://www.cis.umac.mo/~cmpun/">Chi-Man Pun</a></h4>
+<div class="container" style="box-shadow: 0 5px 10px #ccc; padding:30px;">
+	<h1 align='center'>Improving the Harmony of the Composite Image by Spatial-Separated Attention Module</h1>
+    <br>
+	<h4 align='center' align='center'><a href="https://vinthony.github.io/">Xiaodong Cun</a> and <a href="http://www.cis.umac.mo/~cmpun/">Chi-Man Pun</a></h4>
 	<p align='center'>University of Macau</p>
 
-	<p align='center'><a href="#">[Github]</a><a href="#">[ArXiv]</a><a href="#">[Demo]</a></p>
+	<p align='center'><a href="https://github.com/vinthony/s2am">[Github]</a><a href="#">[Arxiv]</a><a href="#Datasets">[Datasets]</a><a href="#">[Pretrained]</a><a href="#Citation">[Citation]</a></p>
 
 	<h3>Abstract</h3>
-	<p style="text-align:justify">We address the problem of Image Harmonization: Given a spliced image and the mask of the spliced region, we try to harmonize the “style” of the pasted region with the background (non-spliced region). Previous approaches have been focusing on learning directly by the neural network. In this work, we start from an empirical observation: the differences can only be found in the spliced region between the spliced image and the harmonized result while they share the same semantic information and the appearance in the non-spliced region. Thus, in order to learn the masked region and the reversed masked region of the feature map individually, we propose a novel attention module named Regional Attentive Skip-Connection (RASC). Furthermore, we design a novel image harmonization method by replacing the original skip-connection in Unet with RASC module for the encoder-decoder structure ensures the consistency in high-level features. The experiments show that the proposed RASC module performs better than other state-of-the-art attention modules in our task. Moreover, we demonstrate the advantages of our model against other state-of-the-art image harmonization methods via criteria from multiple points of view. </p>
+	<p style="text-align:justify">
+Image composition is one of the most important applications in image processing. However, the inharmonious appearance between the spliced region and background degrade the quality of image. Thus, we address the problem of Image Harmonization: Given a spliced image and the mask of the spliced region, we try to harmonize the ''style'' of the pasted region with the background (non-spliced region). Previous approaches have been focusing on learning directly by the neural network. In this work, we start from an empirical observation: the differences can only be found in the spliced region between the spliced image and the harmonized result while they share the same semantic information and the appearance in the non-spliced region. Thus, in order to learn the feature map in the masked region and the others individually, we propose a novel attention module named Spatial-Separated Attention Module (S²AM). Furthermore, we design a novel image harmonization framework by inserting the S²AM in the coarser low level features of the Unet structure by two different ways. Besides image harmonization, we make a big step for harmonizing the composite image without the specific mask under previous observation. The experiments show that the proposed S²AM performs better than other state-of-the-art attention modules in our task. Moreover, we demonstrate the advantages of our model against other state-of-the-art image harmonization methods via criteria from multiple points of view.
+</p>
+    <div style="text-align:center"><img class="img-thumbnail" width="80%" src="results.png"></div>
+    <hr>
+    <h3>Regional Attentive Block</h3>
+    <div style="text-align:center"><img class="img-thumbnail" width="80%" src="rab.png"></div>
+    <hr>
+    <!-- <h3>Network Structure</h3>
 
+    <div style="text-align:center"><img class="img-thumbnail" width="80%" src="main.png"></div> -->
+
+    <h3 id='Datasets'>Datasets</h3>
+    <div><a href="">S-COCO[10G]</a></div>
+    <div><a href="">S-Adobe5K[10G]</a></div>
+    <hr>
+
+    <h3>Results</h3>
+    <div style="text-align:center"><img class="img-thumbnail" width="80%" src="sample.png"></div>
+    <hr>
+    
+
+    <h3 id='Citation'>Citation</h3>
+    <pre>
+        @article{Cun:2019rasc,
+            author = {Cun, Xiaodong},
+            title = {{Regional Attentive Skip-Connection for Image Harmonization}},
+            year = {2019},
+            }
+    </pre>
+    <hr>
+
+    <h3>Related Works</h3>
+    <a href="http://efrosprojects.eecs.berkeley.edu/realism/">Learning a Discriminative Model for the Perception of Realism in Composite Images (ICCV 2015)</a><br>
+    <a href="https://arxiv.org/abs/1703.00069">Deep Image Harmonization (CVPR 2017)</a><br>
+    <a href="https://arxiv.org/abs/1709.01507">Squeeze-and-Excitation Networks (CVPR 2018)</a><br>
+    <a href="https://arxiv.org/abs/1807.06521">CBAM: Convolutional Block Attention Module (ECCV 2018)</a>
 </div>
 
 </body>
