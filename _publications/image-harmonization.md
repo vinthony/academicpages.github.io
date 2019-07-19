@@ -5,7 +5,7 @@ permalink: /publication/attention-image-harmonization
 excerpt: 'TODO.'
 date: 2019-02-26
 venue: 'ArXiv'
-arxiv: https://github.com/vinthony/todo
+arxiv: https://arxiv.org/abs/1907.06406
 teaser: https://vinthony.github.io/academicpages.github.io/images/harmonization.gif
 code: https://github.com/vinthony/s2am
 project: https://vinthony.github.io/academicpages.github.io/projects/rasc.html
