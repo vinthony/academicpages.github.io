@@ -69,7 +69,8 @@ i{
 
 👾 Publications
 =======
-  <ul style='padding-left:20px'>{% for post in site.publications %}
+{% assign sorted_pages = site.publications | sort:"date"| reverse %}
+  <ul style='padding-left:20px'>{% for post in sorted_pages %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
 
@@ -88,7 +89,8 @@ i{
 
 👾 Pervious Projects
 =======
-  <ul style='padding-left:20px'>{% for post in site.teaching %}
+{% assign sorted_prev = site.teaching | sort:"date" | reverse %}
+  <ul style='padding-left:20px'>{% for post in sorted_prev %}
     {% include archive-single-cv-projects.html %}
   {% endfor %}</ul>  
 

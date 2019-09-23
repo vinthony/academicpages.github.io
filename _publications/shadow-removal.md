@@ -4,6 +4,7 @@ collection: publications
 permalink: /publication/shadow-removal
 excerpt: 'TODO.'
 date: 2019-09-06
+order: 1
 venue: 'ArXiv'
 <!-- arxiv: https://arxiv.org/abs/tbd -->
 teaser: https://vinthony.github.io/academicpages.github.io/images/shadow.gif
