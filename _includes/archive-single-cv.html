@@ -23,6 +23,9 @@
   .links{
     color: #77428D;
   }
+  .author b{
+    color: #77428D;
+  }
 </style>
 
 <div class="{{ include.type | default: "list" }}__item">
@@ -43,7 +46,7 @@
 
       {% if post.authors%}
       <br>
-      <div style="display: inline; ">  {{post.authors}}</div>
+      <div class='author' style="display: inline; ">  {{post.authors}}</div>
       {% endif %} 
 
       {% if post.publication %}
