@@ -6,7 +6,7 @@ excerpt: 'TODO.'
 date: 2019-09-06
 order: 1
 venue: 'ArXiv'
-<!-- arxiv: https://arxiv.org/abs/tbd -->
+arxiv: https://arxiv.org/abs/1911.08718
 teaser: https://vinthony.github.io/academicpages.github.io/images/shadow.gif
 code: https://github.com/vinthony/ghost-free-shadow-removal
 <!-- project: https://vinthony.github.io/academicpages.github.io/projects/tbd -->
