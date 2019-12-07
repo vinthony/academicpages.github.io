@@ -208,7 +208,7 @@
         domx = document.getElementById('timer')
         XX = timer/1000/60/60/24
         day = parseInt(timer/1000/60/60/24)
-        domx.innerHTML=day+"days "+ ((XX-day)*24).toFixed(2)+"hours" 
+        domx.innerText= day+"days "+ ((XX-day)*24).toFixed(2)+"hours"
 
     },1000)
     
