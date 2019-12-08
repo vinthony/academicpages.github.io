@@ -73,7 +73,7 @@ i{
 </ul>
 
 
-👾 Publications
+👾 Highlight Publications
 =======
 {% assign sorted_pages = site.publications | sort:"date"| reverse %}
   <ul style='padding-left:20px'>{% for post in sorted_pages %}
@@ -82,7 +82,7 @@ i{
 
 
 
-👾 Pervious Projects
+👾 Other Projects
 =======
 {% assign sorted_prev = site.teaching | sort:"date" | reverse %}
   <ul style='padding-left:20px'>{% for post in sorted_prev %}
