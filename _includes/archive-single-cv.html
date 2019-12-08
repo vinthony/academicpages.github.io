@@ -14,6 +14,12 @@
 
 
 <style type="text/css">
+  body{
+    line-height: 1em;
+  }
+  a{
+    text-decoration: none;
+  }
   .post-teaser{
     box-shadow: 3px 0px 3px #ccc;
   }
@@ -22,6 +28,9 @@
   }
   .links{
     color: #77428D;
+    float: left;
+    display: block;
+    margin: 0 2px;
   }
   .author b{
     color: #77428D;
@@ -53,20 +62,25 @@
       <br> 
       <i style="color:#7B90D2"> {{post.publication}}</i>
       {% endif %} 
-      <b><br>
+      <br>
+      <div style="text-align: left;">
       {% if post.paperurl%}
       <a class='links' href="{{ post.paperurl }}" rel="paperurl">[PDF]</a> 
       {% endif %} 
       {% if post.arxiv%}
       <a class='links' href="{{ post.arxiv }}" rel="paperurl">[ArXiv]</a> 
-      {% endif %} 
-      {% if post.code%}
-      <a class='links' href="{{ post.code }}" rel="paperurl">[Github]</a> 
-      {% endif %} 
+      {% endif %}       
       {% if post.project%}
       <a class='links' href="{{ post.project }}" rel="paperurl">[Project]</a> 
+      {% endif %}
+      {% if post.code%} 
+      <!-- <a class='links' href="{{ post.code }}" rel="paperurl">[Github]</a> -->
+      <span style="display:inline-block">
+        <!-- Place this tag where you want the button to render. -->
+<a class="github-button" href="https://github.com/vinthony/ghost-free-shadow-removal" data-icon="octicon-star" data-show-count="true" aria-label="Star vinthony/ghost-free-shadow-removal on GitHub">Github</a>
+      </span>
       {% endif %} 
-    </b>
+    </div>
       </div> 
 
     </li>
