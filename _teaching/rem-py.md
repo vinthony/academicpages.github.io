@@ -6,7 +6,7 @@ date: 2018-03-14
 authors: Xiaodong Cun
 discription: 
 teaser: http://github.com/vinthony/rem.py/raw/master/assets/default.png
-link: https://github.com/vinthony/rem.py
+code: https://github.com/vinthony/rem.py
 ---
 
 <!-- This paper is about the number 3. The number 4 is left for future work. -->

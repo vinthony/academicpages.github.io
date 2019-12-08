@@ -55,14 +55,17 @@
       {% endif %} 
       <br>
       <b>
-      {% if post.paperurl%}
+      {% if post.paperurl %}
       <a class='links' href="{{ post.paperurl }}" rel="paperurl">[PDF]</a> 
       {% endif %} 
-      {% if post.arxiv%}
+      {% if post.arxiv %}
       <a class='links' href="{{ post.arxiv }}" rel="paperurl">[ArXiv]</a> 
       {% endif %} 
-      {% if post.link%}
-      <a class='links' href="{{ post.link }}" rel="paperurl">[Github]</a> 
+      {% if post.code %}
+      <span style="display:inline-block">
+        <!-- Place this tag where you want the button to render. -->
+        <a class="github-button" href="{{ post.code }}" data-icon="octicon-star" data-show-count="true">Github</a>
+      </span>
       {% endif %} 
       {% if post.project%}
       <a class='links' href="{{ post.project }}" rel="paperurl">[Project]</a> 
@@ -72,4 +75,5 @@
 
     </li>
  </article>
+ <br>
 </div>
