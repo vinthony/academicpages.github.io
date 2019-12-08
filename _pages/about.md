@@ -16,6 +16,8 @@ redirect_from:
   #main{
     margin-top: 0px;
     margin-bottom: 0px;
+    border: 1px solid #eee;
+    box-shadow: 0px 10px 10px #aaa;
   }
   .page__inner-wrap{
     padding-left: 20px;
@@ -32,6 +34,12 @@ redirect_from:
     background-color:#f7f7f7;
 		font-family: 'Stylish', sans-serif;
 	}
+  .page{
+    padding: 0px;
+  }
+  .page__meta{
+    margin-top: 0px;
+  }
 
 i{
   font-weight:bold
