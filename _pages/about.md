@@ -18,7 +18,7 @@ redirect_from:
     margin-top: 0px;
     margin-bottom: 0px;
     background:#fff;
-    box-shadow: 0px 10px 10px #aaa;
+    /* box-shadow: 0px 10px 10px #aaa; */
     padding:20px;
     width:1060px;
   }
@@ -38,7 +38,6 @@ redirect_from:
     margin-bottom:0px;
 	}
 	body{
-    background-color:black;
 		font-family: 'Stylish', sans-serif;
 	}
   .page{
