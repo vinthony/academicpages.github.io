@@ -4,45 +4,30 @@
   {% assign author = site.data.authors[page.author] %}{% else %}{% assign author = site.author %}
 {% endif %}
 
+<style type="text/css">
+  .author__urls li{
+     display: inline-block;
+     margin-bottom: 0;
+  }
+  .author__urls a{
+    font-size: 20px;
+    padding:0;
+  }
+</style>
 
-<div style='margin-top: 200px' itemscope itemtype="http://schema.org/Person">
+<div itemscope itemtype="http://schema.org/Person">
   
-  <div class="author__avatar">
+  <div class="author__avatar" style="padding-left: 40px;float:left;padding-right: 20px;">
     {% if author.avatar contains "://" %}
-    	<img style='margin: 0 auto;' src="{{ author.avatar }}" alt="{{ author.name }}">
+    	<img  src="{{ author.avatar }}" alt="{{ author.name }}">
     {% else %}
-    	<img style='margin: 0 auto;'  src="{{ author.avatar | prepend: "/images/" | prepend: base_path }}" class="author__avatar" alt="{{ author.name }}">
+    	<img  src="{{ author.avatar | prepend: "/images/" | prepend: base_path }}" class="author__avatar" alt="{{ author.name }}">
     {% endif %}
   </div>
-
   <div class="author__content">
-    <h3 class="author__name" style="text-align:center;font-size:2em;font-family: 'Bangers', serif;color: #77428D;">{{ author.name }}</h3>
-    {% if author.bio %}<p class="author__bio">{{ author.bio }}</p>{% endif %}
-  </div>
-
-  <div class="author__urls-wrapper">
-    <button class="btn btn--inverse">Follow</button>
-    <style type="text/css">
-      .author__urls li{
-         display: inline-block;
-      }
-      .author__urls a{
-        font-size: 25px
-      }
-    </style>
-    <ul class="author__urls social-icons">
-     <!--  
-     {% if author.location %}
-        <li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> {{ author.location }}</li>
-      {% endif %}
-      {% if author.employer %}
-        <li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> {{ author.employer }}</li>
-      {% endif %}
-      {% if author.uri %}
-        <li><a href="{{ author.uri }}"><i class="fa fa-fw fa-chain" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].website_label | default: "Website" }}</a></li>
-      {% endif %}
-       -->
-      {% if author.email %}
+    <div class="author__urls-wrapper" style="padding-left: 40px;line-height:1em;font-size:xx-large; font-family: 'Stylish', serif; color: #77428D;">{{ author.name }}
+      <ul class="author__urls social-icons" style="display: inline-block;margin-left: 10px;" >
+        {% if author.email %}
         <li><a href="mailto:{{ author.email }}"><i class="fa fa-fw fa-envelope-square" aria-hidden="true"></i> </a></li>
       {% endif %}
 
@@ -76,7 +61,14 @@
       {% if author.googlescholar %}
         <li><a href="{{ author.googlescholar }}"><i class="ai ai-google-scholar-square ai-fw"></i></a></li>
       {% endif %}
-     
-    </ul>
+        </ul>
+      </div>
+    {% if author.bio %}<p class="author__bio" style="width: 85%;text-align: justify;line-height: 1em;padding-left: 40px; margin-top: 5px;">  
+      I am a Ph.D. Student at University of Macau, under the supervision of Dr. <a href="http://www.cis.umac.mo/~cmpun/">Chi-Man Pun</a>.
+      Before that, he received his B.Sc and M.Sc. degrees in Computer Science from Xidian University and University of Macau in 2015 and 2018 respectively.
+      Currently, I am focusing on the application of Computer Vision, Computational Photograpy and Deep Learning.</p>{% endif %}
   </div>
+
 </div>
+
+<div style="clear: both; margin-bottom: 20px;"></div>
