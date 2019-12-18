@@ -15,6 +15,8 @@
   }
 </style>
 
+<link href="https://fonts.googleapis.com/css?family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
+
 <div itemscope itemtype="http://schema.org/Person">
   
   <div class="author__avatar" style="padding-left: 40px;float:left;padding-right: 20px;">
@@ -25,12 +27,13 @@
     {% endif %}
   </div>
   <div class="author__content">
-    <div class="author__urls-wrapper" style="padding-left: 40px;line-height:1em;font-size:xx-large; font-family: 'Stylish', serif; color: #77428D;">{{ author.name }}
-      <ul class="author__urls social-icons" style="display: inline-block;margin-left: 10px;" >
+    <div style="padding-left: 40px;line-height:1em;font-size:xx-large; font-family: 'Stylish', serif; color: #77428D;">
+      {{ author.name }} <span style="font-family: 'Ma Shan Zheng', cursive;" >寸晓东</span>
+      <div class="author__urls-wrapper" style="display: inline-block;">
+      <ul class="author__urls social-icons" style="margin-left: 10px;" >
         {% if author.email %}
         <li><a href="mailto:{{ author.email }}"><i class="fa fa-fw fa-envelope-square" aria-hidden="true"></i> </a></li>
       {% endif %}
-
       {% if author.twitter %}
         <li><a href="https://twitter.com/{{ author.twitter }}"><i class="fa fa-fw fa-twitter-square" aria-hidden="true"></i> </a></li>
       {% endif %}
@@ -63,7 +66,8 @@
       {% endif %}
         </ul>
       </div>
-    {% if author.bio %}<p class="author__bio" style="width: 85%;text-align: justify;line-height: 1em;padding-left: 40px; margin-top: 5px;">  
+    </div>
+    {% if author.bio %}<p class="author__bio" style="width: 85%;text-align: justify;line-height: 1em;padding-left: 40px; margin-top: 5px;line-height: 1.1em;">  
       I am a Ph.D. Student at University of Macau, under the supervision of Dr. <a href="http://www.cis.umac.mo/~cmpun/">Chi-Man Pun</a>.
       Before that, he received his B.Sc and M.Sc. degrees in Computer Science from Xidian University and University of Macau in 2015 and 2018 respectively.
       Currently, I am focusing on the application of Computer Vision, Computational Photograpy and Deep Learning.</p>{% endif %}

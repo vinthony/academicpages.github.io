@@ -31,6 +31,9 @@ redirect_from:
   .page__footer{
     margin-top: 0px;
   }
+  .news{
+    color: #77428D;
+  }
 	h1,h2,h3,h4,h5,h6{
 		font-family: 'Stylish', serif;
     font-weight:bolder;
@@ -69,8 +72,8 @@ h1 ul{
 
 👾 News
 ======
-<ul style="list-style: none;">
-<li>🎉 [2019.11] One paper accepted by AAAI-20!</li>
+<ul class="news" style="list-style: none;">
+<li>🎉 [2019.11] One paper is accepted by AAAI-20!</li>
 </ul>
 
 👾 Activities
