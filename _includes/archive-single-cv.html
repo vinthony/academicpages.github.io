@@ -39,15 +39,15 @@
 
 <div class="{{ include.type | default: "list" }}__item">
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    <li style="list-style: none;line-height: 1.2em;border-bottom: 1px solid #eee; margin-right: 20px">
+    <li style="list-style: none;line-height: 1.2em; margin-right: 20px">
   
       {% if post.teaser %}
           <img class='post-teaser' src="{{post.teaser}}" style="display: inline-block;width: 150px;height:112px;vertical-align:top;">
       {% else %}
           <img class='post-teaser'  src="http://via.placeholder.com/150x112" style="display: inline-block;width: 150px;height:112px;vertical-align:top;">
       {% endif %}
-      <div style="display: inline-block;width: 75%;padding-left: 5px;padding-bottom: 5px; " itemprop="description">
-        <b style="line-height: 1em; font-size: 20px;"><i >📜 {{ post.title }}</i></b>
+      <div style="display: inline-block;width: 75%;padding-top:5px; padding-left: 5px;padding-bottom: 5px; " itemprop="description">
+        <b style="line-height: 1em; font-size: 20px;"><i>{{ post.title }}</i></b>
       
       <!-- {% if post.discription %}
       <br><div style="display: inline; color: #999">{{post.discription}}</div> 
