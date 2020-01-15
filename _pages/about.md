@@ -105,7 +105,11 @@ h1 ul{
 {% endfor %}
 </ul>  
 
+👾 Visitors
+=======
+{% include show_earth.html %}
 
 👾 Achievements
 =======
 {% include show_achievement.html %}
+
