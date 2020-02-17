@@ -73,6 +73,7 @@ h1 ul{
 👾 News
 ======
 <ul class="news" style="list-style: none;">
+<li>🎉 [2020.02] One paper is accepted by TIP!</li>
 <li>🎉 [2019.11] One paper is accepted by AAAI-20!</li>
 </ul>
 

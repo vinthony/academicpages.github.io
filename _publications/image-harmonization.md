@@ -11,7 +11,7 @@ teaser: https://vinthony.github.io/academicpages.github.io/images/harmonization.
 code: https://github.com/vinthony/s2am
 project: https://vinthony.github.io/academicpages.github.io/projects/rasc.html
 authors: <b>Xiaodong Cun</b>,  <a href="http://www.cis.umac.mo/~cmpun/">Chi-Man Pun</a>
-publication: Submitted to Trans. on Image Processing (TIP)
+publication: Trans. on Image Processing (TIP)
 ---
 
 <!-- This paper is about the number 3. The number 4 is left for future work. -->
