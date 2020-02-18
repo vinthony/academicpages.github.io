@@ -96,16 +96,6 @@ h1 ul{
 </ul>
 
 
-
-👾 Other Projects
-=======
-{% assign sorted_prev = site.teaching | sort:"date" | reverse %}
-<ul>
-{% for post in sorted_prev %}
-    {% include archive-single-cv-projects.html %}
-{% endfor %}
-</ul>  
-
 👾 Visitors
 =======
 {% include show_earth.html %}

@@ -1,5 +1,5 @@
 ---
-title: "Under review of CVPR 2020"
+title: "Under review"
 collection: publications
 permalink: /publication/dbd
 excerpt: 'TODO.'
