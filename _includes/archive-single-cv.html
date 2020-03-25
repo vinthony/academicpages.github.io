@@ -68,7 +68,7 @@
       <a class='links' href="{{ post.paperurl }}" rel="paperurl"><img src="https://img.shields.io/badge/Paper-PDF-eb002a?color="></a> 
       {% endif %} 
       {% if post.arxiv%}
-      <a class='links' href="{{ post.arxiv }}" rel="paperurl"><img src="https://img.shields.io/badge/PDF-eb002a?labelColor=141414&logoColor=white&logo=arXiv"></a> 
+      <a class='links' href="{{ post.arxiv_url }}" rel="paperurl"><img src="https://img.shields.io/badge/{{post.arxiv}}-PDF-eb002a?labelColor=141414&logoColor=white&logo=arXiv"></a> 
       {% endif %}       
       {% if post.project%}
       <a class='links' href="{{ post.project }}" rel="paperurl"><img src="https://img.shields.io/badge/Project-eb002a?labelColor=141414&logoColor=white&logo="></a> 

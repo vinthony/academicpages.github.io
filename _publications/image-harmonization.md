@@ -6,7 +6,8 @@ excerpt: 'TODO.'
 date: 2019-02-26
 order: 2
 venue: 'ArXiv'
-arxiv: https://arxiv.org/abs/1907.06406
+arxiv: 1907.06406
+arxiv_url: https://arxiv.org/abs/1907.06406
 teaser: https://vinthony.github.io/academicpages.github.io/images/harmonization.gif
 code: s2am
 <!-- project: https://vinthony.github.io/academicpages.github.io/projects/rasc.html -->
