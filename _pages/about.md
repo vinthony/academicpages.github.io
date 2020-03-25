@@ -95,11 +95,11 @@ h1 ul{
     {% include archive-single-cv.html %}
 {% endfor %}
 </ul>
-
+<!-- 
 
 👾 Visitors
 =======
-{% include show_earth.html %}
+{% include show_earth.html %} -->
 
 👾 Achievements
 =======
