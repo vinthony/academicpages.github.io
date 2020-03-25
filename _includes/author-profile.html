@@ -33,49 +33,23 @@
     <div style="padding-left: 40px;line-height:1em;font-size:xx-large; font-family: 'Stylish', serif; color: #77428D;">
       {{ author.name }} <span style="font-family: 'Ma Shan Zheng', cursive;" >寸晓东</span>
       <div class="author__urls-wrapper" style="display: inline-block;">
-      <ul class="author__urls social-icons" style="margin-left: 10px;" >
-        {% if author.email %}
-        <li><a href="mailto:{{ author.email }}"><i class="fa fa-fw fa-envelope-square" aria-hidden="true"></i> </a></li>
-      {% endif %}
-      {% if author.twitter %}
-        <li><a href="https://twitter.com/{{ author.twitter }}"><i class="fa fa-fw fa-twitter-square" aria-hidden="true"></i> </a></li>
-      {% endif %}
-      {% if author.facebook %}
-        <li><a href="https://www.facebook.com/{{ author.facebook }}"><i class="fa fa-fw fa-facebook-square" aria-hidden="true"></i> </a></li>
-      {% endif %}
-     
-      {% if author.linkedin %}
-        <li><a href="https://www.linkedin.com/in/{{ author.linkedin }}"><i class="fa fa-fw fa-linkedin-square" aria-hidden="true"></i> </a></li>
-      {% endif %}
-     
-      {% if author.instagram %}
-        <li><a href="https://instagram.com/{{ author.instagram }}"><i class="fa fa-fw fa-instagram" aria-hidden="true"></i> </a></li>
-      {% endif %}
-
-      {% if author.github %}
-        <li><a href="https://github.com/{{ author.github }}"><i class="fa fa-fw fa-github" aria-hidden="true"></i> </a></li>
-      {% endif %}
-
-      {% if author.steam %}
-        <li><a href="https://steamcommunity.com/id/{{ author.steam }}"><i class="fa fa-fw fa-steam-square" aria-hidden="true"></i> </a></li>
-      {% endif %}
-
-      {% if author.weibo %}
-        <li><a href="https://www.weibo.com/{{ author.weibo }}"><i class="fa fa-fw fa-weibo" aria-hidden="true"></i> </a></li>
-      {% endif %}
-
-      {% if author.googlescholar %}
-        <li><a href="{{ author.googlescholar }}"><i class="ai ai-google-scholar-square ai-fw"></i></a></li>
-      {% endif %}
-        </ul>
+       
       </div>
     </div>
     {% if author.bio %}<p class="author__bio" style="width: 85%;text-align: justify;line-height: 1em;padding-left: 40px; margin-top: 5px;line-height: 1.1em;">  
       I am a Ph.D. student at <a href="http://um.edu.mo/">University of Macau</a>, under the supervision of Dr. <a href="http://www.cis.umac.mo/~cmpun/">Chi-Man Pun</a>.
       Before that, I received my B.Sc and M.Sc. degrees in Computer Science from <a href="https://en.xidian.edu.cn/">Xidian University</a>  and University of Macau in 2015 and 2018 respectively.
-      Currently, I am focusing on the application of Deep Learning based methods for Computer Vision and Computational Photograpy.</p>{% endif %}
+      Currently, I am focusing on the application of Deep Learning based methods for Computer Vision and Computational Photograpy. <br><br>
+
+<img src="https://img.shields.io/badge/email-vinthony%40gmail.com-orange?labelColor=141414&logo=Gmail&color=d14836&logoColor=white&link=mailto:vinthony@gmail.com">
+ <img src="https://img.shields.io/badge/dynamic/json?color=181717&label=Github&query=%24.data.totalSubs&url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3Dgithub%26queryKey%3Dvinthony&logo=github&labelColor=141414&logoColor=white&link=http://github.com/vinthony">
+<img src="https://img.shields.io/badge/dynamic/json?color=e6162d&label=weibo&query=%24.data.totalSubs&url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3Dweibo%26queryKey%3D2182314060&logo=Sina%20Weibo&labelColor=141414&logoColor=white&link=https://www.weibo.com/vinthony/home?topnav=1&wvr=6">
+<img src="https://img.shields.io/badge/dynamic/json?color=0084ff&label=zhihu&query=%24.data.totalSubs&url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3Dzhihu%26queryKey%3Dvinthony&logo=Zhihu&labelColor=141414&logoColor=white">
+<img src="https://img.shields.io/badge/dynamic/json?color=e4405f&label=Instgram&query=%24.data.totalSubs&url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3Dinstagram%26queryKey%3Dvinthony&logo=Instagram&labelColor=141414&logoColor=white">
+    </p>{% endif %}
+
   </div>
 
 </div>
-
 <div style="clear: both; margin-bottom: 20px;"></div>
+
