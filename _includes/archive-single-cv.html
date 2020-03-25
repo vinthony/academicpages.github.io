@@ -65,20 +65,17 @@
       <br>
       <div style="text-align: left;">
       {% if post.paperurl%}
-      <a class='links' href="{{ post.paperurl }}" rel="paperurl">[PDF]</a> 
+      <a class='links' href="{{ post.paperurl }}" rel="paperurl"><img src="https://img.shields.io/badge/Paper-PDF-eb002a?color="></a> 
       {% endif %} 
       {% if post.arxiv%}
-      <a class='links' href="{{ post.arxiv }}" rel="paperurl">[ArXiv]</a> 
+      <a class='links' href="{{ post.arxiv }}" rel="paperurl"><img src="https://img.shields.io/badge/PDF-eb002a?labelColor=141414&logoColor=white&logo=arXiv"></a> 
       {% endif %}       
       {% if post.project%}
-      <a class='links' href="{{ post.project }}" rel="paperurl">[Project]</a> 
+      <a class='links' href="{{ post.project }}" rel="paperurl"><img src="https://img.shields.io/badge/Project-eb002a?labelColor=141414&logoColor=white&logo="></a> 
       {% endif %}
       {% if post.code%} 
       <!-- <a class='links' href="{{ post.code }}" rel="paperurl">[Github]</a> -->
-      <span style="display:inline-block">
-        <!-- Place this tag where you want the button to render. -->
-        <a class="github-button" href="{{ post.code }}" data-icon="octicon-star" data-show-count="true" aria-label="Star vinthony/ghost-free-shadow-removal on GitHub">Github</a>
-      </span>
+      <a href="https:github.com/vinthony/{{post.code}}"><img src="https://img.shields.io/github/stars/vinthony/{{ post.code }}.svg?style=flat&logo=github&label=Star&labelColor=141414&logoColor=white&color=0084ff"></a>
       {% endif %} 
     </div>
       </div> 

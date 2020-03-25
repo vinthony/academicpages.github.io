@@ -8,7 +8,7 @@ order: 1
 venue: 'ArXiv'
 arxiv: https://arxiv.org/abs/1911.08718
 teaser: https://vinthony.github.io/academicpages.github.io/images/shadow.gif
-code: https://github.com/vinthony/ghost-free-shadow-removal
+code: ghost-free-shadow-removal
 <!-- project: https://vinthony.github.io/academicpages.github.io/projects/tbd -->
 authors: <b>Xiaodong Cun</b>,  <a href="http://www.cis.umac.mo/~cmpun/">Chi-Man Pun</a>, Cheng Shi
 publication: AAAI 2020

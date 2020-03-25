@@ -8,8 +8,8 @@ order: 2
 venue: 'ArXiv'
 arxiv: https://arxiv.org/abs/1907.06406
 teaser: https://vinthony.github.io/academicpages.github.io/images/harmonization.gif
-code: https://github.com/vinthony/s2am
-project: https://vinthony.github.io/academicpages.github.io/projects/rasc.html
+code: s2am
+<!-- project: https://vinthony.github.io/academicpages.github.io/projects/rasc.html -->
 authors: <b>Xiaodong Cun</b>,  <a href="http://www.cis.umac.mo/~cmpun/">Chi-Man Pun</a>
 publication: IEEE Trans. on Image Processing (TIP)
 ---
