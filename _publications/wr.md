@@ -1,5 +1,5 @@
 ---
-title: "Defocus Blur Detection(Under review)"
+title: "Watermark Removal(Under review)"
 collection: publications
 permalink: /publication/dbd
 excerpt: 'TODO.'
@@ -7,7 +7,7 @@ date: 2019-11-01
 order: 1
 venue: 'ArXiv'
 <!-- arxiv: https://arxiv.org/abs/tbd -->
-teaser: https://vinthony.github.io/academicpages.github.io/images/dbd.gif
+teaser: https://vinthony.github.io/academicpages.github.io/images/watermark.gif
 <!-- code: https://github.com/vinthony/tbd -->
 <!-- project: https://vinthony.github.io/academicpages.github.io/projects/tbd -->
 authors: <b>Xiaodong Cun</b>,  <a href="http://www.cis.umac.mo/~cmpun/">Chi-Man Pun</a>
