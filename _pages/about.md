@@ -67,6 +67,7 @@ h1 ul{
   padding-left:0px;
   margin-bottom:30px;
 }
+
 </style>
 {% include author-profile.html %}
 
@@ -95,11 +96,14 @@ h1 ul{
     {% include archive-single-cv.html %}
 {% endfor %}
 </ul>
-<!-- 
 
-👾 Visitors
+
+👾 Friends
 =======
-{% include show_earth.html %} -->
+<ul style="list-style: none;">
+<li>👨‍🎓  If you are looking for Machine Tranlation papers, please checkout my friend <a href="https://sunbowliu.github.io/">Xuebo Liu</a>. </li>
+</ul>
+
 
 👾 Achievements
 =======
