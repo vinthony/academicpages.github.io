@@ -13,41 +13,19 @@
 {% endif %}
 
 
-<style type="text/css">
-  body{
-    line-height: 1em;
-  }
-  a{
-    text-decoration: none;
-  }
-  .post-teaser{
-    box-shadow: 3px 0px 3px #ccc;
-  }
-  a{
-    color:#113285;
-  }
-  .links{
-    color: #77428D;
-    float: left;
-    display: block;
-    margin: 0 2px;
-  }
-  .author b{
-    color: #77428D;
-  }
-</style>
-
 <div class="{{ include.type | default: "list" }}__item">
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    <li style="list-style: none;line-height: 1.2em; margin-right: 20px">
-  
+    <li style="list-style: none;line-height: 1.2em; ">
+      
+      <!-- <div class='xtime' style="display: inline; vertical-align: top;padding-left:-10px; margin-right: 10px;">  </div> -->
+
       {% if post.teaser %}
           <img class='post-teaser' src="{{post.teaser}}" style="display: inline-block;width: 150px;height:112px;vertical-align:top;">
       {% else %}
           <img class='post-teaser'  src="http://via.placeholder.com/150x112" style="display: inline-block;width: 150px;height:112px;vertical-align:top;">
       {% endif %}
       <div style="display: inline-block;width: 75%;padding-top:5px; padding-left: 5px;padding-bottom: 5px; " itemprop="description">
-        <b style="line-height: 1em; font-size: 20px;"><i>{{ post.title }}</i></b>
+        <b style="line-height: 1em;"><i>{{ post.title }}</i> <div style="display: inline-block;float: right; color:#113285">{{post.year}}</div></b>
       
       <!-- {% if post.discription %}
       <br><div style="display: inline; color: #999">{{post.discription}}</div> 
@@ -55,7 +33,7 @@
 
       {% if post.authors%}
       <br>
-      <div class='author' style="display: inline; ">  {{post.authors}}</div>
+      <div class='author' style="display: inline; ">  {{post.authors}} </div>
       {% endif %} 
 
       {% if post.publication %}
@@ -74,7 +52,6 @@
       <a class='links' href="{{ post.project }}" rel="paperurl"><img src="https://img.shields.io/badge/Project-eb002a?labelColor=141414&logoColor=white&logo="></a> 
       {% endif %}
       {% if post.code%} 
-      <!-- <a class='links' href="{{ post.code }}" rel="paperurl">[Github]</a> -->
       <a href="https://github.com/vinthony/{{post.code}}"><img src="https://img.shields.io/github/stars/vinthony/{{ post.code }}.svg?style=flat&logo=github&label=Star&labelColor=141414&logoColor=white&color=0084ff"></a>
       {% endif %} 
     </div>

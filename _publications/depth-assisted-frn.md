@@ -4,6 +4,7 @@ collection: publications
 permalink: /publication/depth-assisted-frn
 excerpt: 'TODO.'
 date: 2017-11-01
+year: 2018.07
 venue: 'ArXiv'
 teaser: https://i.imgflip.com/1zqx5f.gif
 arxiv: '1711.06620'

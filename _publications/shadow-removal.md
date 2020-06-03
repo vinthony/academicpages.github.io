@@ -1,9 +1,10 @@
 ---
-title: "Towards Ghost-free Shadow Removal via Dual Hierarchical Aggregation Network and Shadow Matting GAN "
+title: "Towards Ghost-free Shadow Removal <br> via Dual Hierarchical Aggregation Network and Shadow Matting GAN "
 collection: publications
 permalink: /publication/shadow-removal
 excerpt: 'TODO.'
 date: 2019-09-06
+year: 2019.11
 order: 1
 venue: 'ArXiv'
 arxiv: 1911.08718

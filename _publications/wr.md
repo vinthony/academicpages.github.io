@@ -3,7 +3,8 @@ title: "Watermark Removal(Under review)"
 collection: publications
 permalink: /publication/dbd
 excerpt: 'TODO.'
-date: 2019-11-01
+date: 2020-06-01
+year: 2020.07
 order: 1
 venue: 'ArXiv'
 <!-- arxiv: https://arxiv.org/abs/tbd -->

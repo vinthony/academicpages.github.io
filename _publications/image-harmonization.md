@@ -3,7 +3,8 @@ title: "Improving the Harmony of the Composite Image by Spatial-Separated Attent
 collection: publications
 permalink: /publication/attention-image-harmonization
 excerpt: 'TODO.'
-date: 2019-02-26
+date: 2020-02-26
+year: 2020.02
 order: 2
 venue: 'ArXiv'
 arxiv: 1907.06406

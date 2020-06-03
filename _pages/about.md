@@ -9,9 +9,9 @@ redirect_from:
 ---
 
 {% include base_path %}
-
-<link href='http://fonts.font.im/css?family=Bangers' rel='stylesheet' type='text/css'>
-<link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
+<!-- <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet"> -->
+<link href="https://fonts.googleapis.com/css?family=Stylish" rel="stylesheet">
+<!-- <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet"> -->
 
 <style type="text/css">
   #main{
@@ -69,22 +69,47 @@ h1 ul{
 }
 
 </style>
+
+<style type="text/css">
+  body{
+    line-height: 1em;
+  }
+  a{
+    text-decoration: none;
+  }
+  .post-teaser{
+    box-shadow: 3px 0px 3px #ccc;
+  }
+  a{
+    color:#113285;
+  }
+  .links{
+    color: #77428D;
+    float: left;
+    display: block;
+    margin: 0 2px;
+  }
+  .author b{
+    color: #77428D;
+  }
+</style>
+
 {% include author-profile.html %}
 
 👾 News
 ======
-<ul class="news" style="list-style: none;">
-<li>🎉 [2020.03-2020.09] I will join Huawei Noah's Ark Lab as a research intern.</li>
-<li>🎉 [2020.02] One paper is accepted by TIP!</li>
-<li>🎉 [2019.11] One paper is accepted by AAAI-20!</li>
+<ul class="news" style="list-style: none;width: 91%;">
+<li>🎉  &nbsp;&nbsp;I will join Huawei Noah's Ark Lab as a research intern. <div style="float: right;">2020.03 -> Now </div> </li>
+<li>🎉  &nbsp;&nbsp;One paper is accepted by TIP! <div style="float: right;">2020.02 </div> </li>
+<li>🎉  &nbsp;&nbsp;One paper is accepted by AAAI-20! <div style="float: right;">2019.11 </div></li>
 </ul>
 
 👾 Activities
 =======
-<ul style="list-style: none;">
-<li>🚀 Intern FrondEnd Engineer, <i>Alibaba Group</i>, 2014 Summer, Hangzhou, China</li>
-<li>🚀 Intern Algorithm Engineer, <i>HIKVision Research Institute</i>, 2018 Summer, HangZhou, China</li>
-<li>🚀 Asian University Machine Learning Camp, <i>Jeju National University</i>, 2018 Summer, Jeju, Korea </li>
+<ul style="list-style: none;width: 91%;">
+<li>🚀 &nbsp;&nbsp;Intern FrondEnd Engineer, <i>Alibaba Group</i>, Hangzhou, China <div style="float: right;">2014.Summer </div></li>
+<li>🚀 &nbsp;&nbsp;Intern Algorithm Engineer, <i>HIKVision Research Institute</i>, HangZhou, China <div style="float: right;"><div style="float: right;">2018.Summer </div> </div></li>
+<li>🚀 &nbsp;&nbsp;Asian University Machine Learning Camp, <i>Jeju National University</i>, Jeju, Korea <div style="float: right;">2018.Summer</div></li>
 </ul>
 
 
