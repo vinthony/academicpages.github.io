@@ -48,6 +48,9 @@
       {% if post.arxiv%}
       <a class='links' href="{{ post.arxiv_url }}" rel="paperurl"><img src="https://img.shields.io/badge/{{post.arxiv}}-PDF-eb002a?labelColor=141414&logoColor=white&logo=arXiv"></a> 
       {% endif %}       
+      {% if post.demo%}
+      <a class='links' href="{{ post.demo }}" rel="paperurl"><img src="https://img.shields.io/badge/Demo-orange?labelColor=141414&logoColor=white&label=Google CoLab&logo=Google Cloud"></a> 
+      {% endif %}
       {% if post.project%}
       <a class='links' href="{{ post.project }}" rel="paperurl"><img src="https://img.shields.io/badge/Project-eb002a?labelColor=141414&logoColor=white&logo="></a> 
       {% endif %}
