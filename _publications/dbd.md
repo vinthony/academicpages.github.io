@@ -1,5 +1,5 @@
 ---
-title: "Defocus Blur Detection(Under review)"
+title: "Defocus Blur Detection via Depth Distillation"
 collection: publications
 permalink: /publication/dbd
 excerpt: 'TODO.'
@@ -7,12 +7,12 @@ date: 2020-06-01
 year: 2020.03
 order: 1
 venue: 'ArXiv'
-<!-- arxiv: https://arxiv.org/abs/tbd -->
+arxiv: coming soon
 teaser: https://vinthony.github.io/academicpages.github.io/images/defocus.gif
 <!-- code: https://github.com/vinthony/tbd -->
 <!-- project: https://vinthony.github.io/academicpages.github.io/projects/tbd -->
 authors: <b>Xiaodong Cun</b>,  <a href="http://www.cis.umac.mo/~cmpun/">Chi-Man Pun</a>
-<!-- publication: AAAI 2020 -->
+publication: ECCV 2020
 ---
 
 <!-- This paper is about the number 3. The number 4 is left for future work. -->

@@ -99,6 +99,7 @@ h1 ul{
 👾 News
 ======
 <ul class="news" style="list-style: none;width: 91%;">
+<li>🎉  &nbsp;&nbsp;One paper is accepted by ECCV 2020. <div style="float: right;">2020.07 </div> </li>
 <li>🎉  &nbsp;&nbsp;I will join Huawei Noah's Ark Lab as a research intern. <div style="float: right;">2020.03 -> Now </div> </li>
 <li>🎉  &nbsp;&nbsp;One paper is accepted by TIP! <div style="float: right;">2020.02 </div> </li>
 <li>🎉  &nbsp;&nbsp;One paper is accepted by AAAI-20! <div style="float: right;">2019.11 </div></li>
