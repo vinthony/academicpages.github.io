@@ -11,6 +11,7 @@ arxiv: '2007.08113'
 arxiv_url: 'https://arxiv.org/abs/2007.08113'
 teaser: https://vinthony.github.io/academicpages.github.io/images/defocus.gif
 code: depth-distillation
+demo: https://colab.research.google.com/drive/1a-Un_lZqkEN-mr-SzQh9GLy4qXIJgn0v?usp=sharing
 <!-- project: https://vinthony.github.io/academicpages.github.io/projects/tbd -->
 authors: <b>Xiaodong Cun</b>,  <a href="http://www.cis.umac.mo/~cmpun/">Chi-Man Pun</a>
 publication: ECCV 2020
