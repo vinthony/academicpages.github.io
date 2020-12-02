@@ -99,8 +99,9 @@ h1 ul{
 👾 News
 ======
 <ul class="news" style="list-style: none;width: 91%;">
+<li>🎉  &nbsp;&nbsp;One paper is accepted by AAAI-21. <div style="float: right;">2020.12 </div> </li>
 <li>🎉  &nbsp;&nbsp;One paper is accepted by ECCV 2020. <div style="float: right;">2020.07 </div> </li>
-<li>🎉  &nbsp;&nbsp;I will join Huawei Noah's Ark Lab as a research intern. <div style="float: right;">2020.03 -> Now </div> </li>
+<li>🎉  &nbsp;&nbsp;I will join Huawei Noah's Ark Lab as a research intern. <div style="float: right;">2020.03 </div> </li>
 <li>🎉  &nbsp;&nbsp;One paper is accepted by TIP! <div style="float: right;">2020.02 </div> </li>
 <li>🎉  &nbsp;&nbsp;One paper is accepted by AAAI-20! <div style="float: right;">2019.11 </div></li>
 </ul>
@@ -108,9 +109,11 @@ h1 ul{
 👾 Activities
 =======
 <ul style="list-style: none;width: 91%;">
+
 <li>🚀 &nbsp;&nbsp;Intern FrondEnd Engineer, <i>Alibaba Group</i>, Hangzhou, China <div style="float: right;">2014.Summer </div></li>
 <li>🚀 &nbsp;&nbsp;Intern Algorithm Engineer, <i>HIKVision Research Institute</i>, HangZhou, China <div style="float: right;"><div style="float: right;">2018.Summer </div> </div></li>
 <li>🚀 &nbsp;&nbsp;Asian University Machine Learning Camp, <i>Jeju National University</i>, Jeju, Korea <div style="float: right;">2018.Summer</div></li>
+<li>🚀 &nbsp;&nbsp;Research Intern, <i>Huawei Noah's Ark Lab</i>, Shenzhen, China <div style="float: right;">2020.3-11 </div></li>
 </ul>
 
 
