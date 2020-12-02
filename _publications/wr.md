@@ -1,20 +1,16 @@
 ---
-title: "Watermark Removal(Under review)"
+title: "Split then Refine: Sequential Attention-guided ResUNets for Blind Single Image Visible Watermark Removal"
 collection: publications
 permalink: /publication/dbd
 excerpt: 'TODO.'
-date: 2020-06-01
-year: 2020.07
+date: 2020-12-01
+year: 2020.12
 order: 1
 venue: 'ArXiv'
 <!-- arxiv: https://arxiv.org/abs/tbd -->
 teaser: https://vinthony.github.io/academicpages.github.io/images/watermark.gif
 <!-- code: https://github.com/vinthony/tbd -->
 <!-- project: https://vinthony.github.io/academicpages.github.io/projects/tbd -->
-authors: <b>Xiaodong Cun</b>,  <a href="http://www.cis.umac.mo/~cmpun/">Chi-Man Pun</a>
-<!-- publication: AAAI 2020 -->
+authors: <b>Xiaodong Cun</b> and <a href="http://www.cis.umac.mo/~cmpun/">Chi-Man Pun</a>
+publication: AAAI 2021
 ---
-
-<!-- This paper is about the number 3. The number 4 is left for future work. -->
-
-<!-- [Download paper here](http://academicpages.github.io/files/paper3.pdf) -->
