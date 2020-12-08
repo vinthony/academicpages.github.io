@@ -7,7 +7,7 @@ date: 2020-12-01
 year: 2020.12
 order: 1
 venue: 'ArXiv'
-arxiv: https://arxiv.org/abs/tbd
+arxiv: comming soon
 teaser: https://vinthony.github.io/academicpages.github.io/images/watermark.gif
 code: deep-blind-watermark-removal
 <!-- project: https://vinthony.github.io/academicpages.github.io/projects/tbd -->
