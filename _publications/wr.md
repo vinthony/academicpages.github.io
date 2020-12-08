@@ -9,7 +9,7 @@ order: 1
 venue: 'ArXiv'
 arxiv: https://arxiv.org/abs/tbd
 teaser: https://vinthony.github.io/academicpages.github.io/images/watermark.gif
-code: https://github.com/vinthony/deep-blind-watermark-removal
+code: deep-blind-watermark-removal
 <!-- project: https://vinthony.github.io/academicpages.github.io/projects/tbd -->
 authors: <b>Xiaodong Cun</b> and <a href="http://www.cis.umac.mo/~cmpun/">Chi-Man Pun</a>
 publication: AAAI 2021
