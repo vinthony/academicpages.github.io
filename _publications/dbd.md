@@ -7,8 +7,8 @@ date: 2020-06-01
 year: 2020.03
 order: 1
 venue: 'ArXiv'
-arxiv: '2012.07007'
-arxiv_url: 'https://arxiv.org/abs/2012.07007'
+arxiv: '2007.08113'
+arxiv_url: 'https://arxiv.org/abs/2007.08113'
 teaser: https://vinthony.github.io/academicpages.github.io/images/defocus.gif
 code: depth-distillation
 demo: https://colab.research.google.com/drive/1a-Un_lZqkEN-mr-SzQh9GLy4qXIJgn0v?usp=sharing
