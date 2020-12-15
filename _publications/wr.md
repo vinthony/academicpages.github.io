@@ -7,7 +7,8 @@ date: 2020-12-01
 year: 2020.12
 order: 1
 venue: 'ArXiv'
-arxiv: comming soon
+arxiv: '2012.07007'
+arxiv_url: 'https://arxiv.org/abs/2012.07007'
 teaser: https://vinthony.github.io/academicpages.github.io/images/watermark.gif
 code: deep-blind-watermark-removal
 <!-- project: https://vinthony.github.io/academicpages.github.io/projects/tbd -->
