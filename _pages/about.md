@@ -89,9 +89,9 @@ h1 ul{
     display: block;
     margin: 0 2px;
   }
-  .author b{
+  /*.author b{
     color: #77428D;
-  }
+  }*/
 </style>
 
 {% include author-profile.html %}

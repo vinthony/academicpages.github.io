@@ -15,7 +15,7 @@
 
 <div class="{{ include.type | default: "list" }}__item">
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    <li style="list-style: none;line-height: 1.2em; ">
+    <li style="list-style: none;line-height: 1.2em;">
       
       <!-- <div class='xtime' style="display: inline; vertical-align: top;padding-left:-10px; margin-right: 10px;">  </div> -->
 
@@ -25,7 +25,9 @@
           <img class='post-teaser'  src="http://via.placeholder.com/150x112" style="display: inline-block;width: 150px;height:112px;vertical-align:top;">
       {% endif %}
       <div style="display: inline-block;width: 75%;padding-top:5px; padding-left: 5px;padding-bottom: 5px; " itemprop="description">
-        <b style="line-height: 1em;"><i>{{ post.title }}</i> <div style="display: inline-block;float: right; color:#113285">{{post.year}}</div></b>
+        <b style="line-height: 1em; color: #77428D; font-size:1.1em"><b>{{ post.title }}</b> 
+        <!-- <div style="display: inline-block;float: right; color:#113285">{{post.year}}</div> -->
+      </b>
       
       <!-- {% if post.discription %}
       <br><div style="display: inline; color: #999">{{post.discription}}</div> 
@@ -38,7 +40,7 @@
 
       {% if post.publication %}
       <br> 
-      <i style="color:#7B90D2"> {{post.publication}}</i>
+      <i> {{post.publication}}</i>
       {% endif %} 
       <br>
       <div style="text-align: left;">
