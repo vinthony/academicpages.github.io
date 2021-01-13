@@ -10,7 +10,7 @@ teaser: https://i.imgflip.com/1zqx5f.gif
 arxiv: '1711.06620'
 arxiv_url: 'https://arxiv.org/abs/1711.06620'
 publication: IEEE Computer Graphics and Applications (also appear in SIGGRAPH 2018 Poster)
-authors: <b>Xiaodong Cun</b>, <a href="http://feng-xu.com/">Feng Xu</a>, <a href="http://www.cis.umac.mo/~cmpun/">Chi-Man Pun</a>, Hao Gao
+authors: <b>Xiaodong Cun</b>, <a href="http://xufeng.site/">Feng Xu</a>, <a href="http://www.cis.umac.mo/~cmpun/">Chi-Man Pun</a>, <a href='https://scholar.google.com/citations?user=hMBA1REAAAAJ&hl=zh-CN'>Hao Gao</a>
 citation: 'Xiaodong Cun, Feng Xu, Chi-Man Pun, Hao Gao(2017). &quot;Depth Assisted Full Resolution Network for Single Image based View Synthesis&quot; <i>, ArXiv</i>.'
 ---
 

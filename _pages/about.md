@@ -31,9 +31,6 @@ redirect_from:
   .page__footer{
     margin-top: 0px;
   }
-  .news{
-    color: #77428D;
-  }
 	h1,h2,h3,h4,h5,h6{
 		font-family: 'Stylish', serif;
     font-weight:bolder;
@@ -75,14 +72,16 @@ h1 ul{
     line-height: 1em;
   }
   a{
+    color:#113285;
     text-decoration: none;
+  }
+  b{
+    color:#77428D;
   }
   .post-teaser{
     box-shadow: 3px 0px 3px #ccc;
   }
-  a{
-    color:#113285;
-  }
+
   .links{
     color: #77428D;
     float: left;
